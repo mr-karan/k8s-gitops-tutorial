@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rubberduck-world
+  namespace: minikube-demo
+  labels:
+    app: rubberduck
+    env: staging
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: rubberduck
+  template:
+    metadata:
+      labels:
+        app: rubberduck
+        tier: api
+        env: staging
+    spec:
+      containers:
+      - name: calert
+        image: mrkaran/rubberduck:1.0.2
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: "0.25" # 250 milli cores
+            memory: "160Mi"
+          requests:
+            cpu: "0.15" # 150 milli cores
+            memory: "100Mi"
