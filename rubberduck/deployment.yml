@@ -7,6 +7,8 @@ metadata:
   labels:
     app: rubberduck
     env: staging
+  annotations:
+    flux.weave.works/tag.calert: glob:v1.*.*
 spec:
   replicas: 2
   selector:
