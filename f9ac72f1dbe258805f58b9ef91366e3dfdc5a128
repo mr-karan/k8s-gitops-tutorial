@@ -1,0 +1,1 @@
+{"jobID":"c7dd246e-b4e2-05ad-6152-061d68b5e952","spec":{"type":"policy","cause":{"Message":"","User":"karan \u003ckaran.sharma@zerodha.com\u003e"},"spec":{"minikube-demo:deployment/rubberduck-world":{"add":{"tag_all":"glob:v1.*.*"},"remove":{}}}},"result":null}
