@@ -9,7 +9,6 @@ metadata:
     env: staging
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.calert: glob:v1.*.*
 spec:
   replicas: 2
   selector:
