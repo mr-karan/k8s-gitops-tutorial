@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: calert
-        image: mrkaran/rubberduck:1.0.2
+        image: mrkaran/rubberduck:1.0.3
         ports:
         - containerPort: 8080
         resources:
